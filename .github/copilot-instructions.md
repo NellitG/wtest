@@ -2,9 +2,9 @@
 
 Purpose: provide concise, actionable guidance so an AI coding agent can be immediately productive in this repository.
 
-- **Repo type:** Django project template (minimal). See [README.md](../README.md). The repo currently contains a template README and `requirements.txt`.
+- **Repo type:** Django project template (minimal). See [README.md]. The repo currently contains a template README and `requirements.txt`.
 - **Activate environment (Windows):** `env\\Scripts\\activate` (README shows the virtualenv is already created).
-- **Install deps:** `pip install -r ../requirements.txt` (or `pip install django` per README when starting from scratch).
+- **Install deps:** `pip install -r requirements.txt` (or `pip install django` per README when starting from scratch).
 
 - **Common commands you'll need:**
   - Create project (as in README): `django-admin startproject project name .`
@@ -28,8 +28,8 @@ Purpose: provide concise, actionable guidance so an AI coding agent can be immed
   - If adding dependencies, update `requirements.txt` and include the install command in PR descriptions.
 
 - **Files to inspect for context:**
-  - [README.md](../README.md) — primary setup instructions and the source of several repository conventions.
-  - [requirements.txt](../requirements.txt) — dependency list used for environment setup.
+  - `README.md` — primary setup instructions and the source of several repository conventions.
+  - `requirements.txt` — dependency list used for environment setup.
 
 If any of the above assumptions are incorrect (for example, the intended `INSTALLED_APPS` entry is `rest_framework` rather than `restframework`), ask the maintainers before making large changes.
 
