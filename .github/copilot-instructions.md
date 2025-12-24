@@ -2,7 +2,7 @@
 
 Purpose: provide concise, actionable guidance so an AI coding agent can be immediately productive in this repository.
 
-- **Repo type:** Django project template (minimal). See [README.md](README.md). The repo currently contains a template README and `requirements.txt`.
+- **Repo type:** Django project template (minimal). See [README.md](../README.md). The repo currently contains a template README and `requirements.txt`.
 - **Activate environment (Windows):** `env\\Scripts\\activate` (README shows the virtualenv is already created).
 - **Install deps:** `pip install -r requirements.txt` (or `pip install django` per README when starting from scratch).
 
