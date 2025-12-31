@@ -9,9 +9,11 @@ class Receipt(models.Model):
     previous_reading = models.FloatField(null=True)
     current_reading = models.FloatField(null=True)
     units_consumed = models.FloatField(null=True)
-    rate_per_unit = models.FloatField(null=True)
+    rate_per_unit = models.DecimalField(default=160.00, max_digits=10, decimal_places=2)
     amount = models.FloatField(null=True)
     receipt_number = models.CharField(max_length=100, unique=True, null=True, blank=True)
+
+    RATE_PER_UNIT = 160.00
 
 
     def __str__(self):

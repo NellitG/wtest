@@ -8,12 +8,12 @@ class MeterReading(models.Model):
     current_reading = models.DecimalField(max_digits=10, decimal_places=2)
     previous_reading = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     units_consumed = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
-    rate_per_unit = models.DecimalField(default=120.00, max_digits=10, decimal_places=2)
+    rate_per_unit = models.DecimalField(default=160.00, max_digits=10, decimal_places=2)
     amount = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     receipt_number = models.CharField(max_length=100, blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
 
-    RATE_PER_UNIT = 160  
+    RATE_PER_UNIT = 160.00
 
     def save(self, *args, **kwargs):
         

@@ -47,7 +47,7 @@ class CalculateBill(APIView):
             return Response({"error": "Client not found"}, status=status.HTTP_404_NOT_FOUND)
 
         current_reading = request.data.get("current_reading")
-        rate_per_unit = request.data.get("rate_per_unit", getattr(MeterReading, "RATE_PER_UNIT", 120))
+        rate_per_unit = request.data.get("rate_per_unit", getattr(MeterReading, "RATE_PER_UNIT", 160))
 
         # Validate numeric inputs
         try:
